@@ -36,7 +36,7 @@ e su num controllo
 
 PSEUDO CODICE
 
-    per ogni iterazione del ciclo   100 iterazioni  generano la stampa da 0 a 99
+    per ogni iterazione del ciclo   100 iterazioni  generano la stampa da 1 a 100
     (dichiaro i = 0; i < 100; i++)  {
     
     dichiaro num = i +1 
@@ -49,8 +49,25 @@ PSEUDO CODICE
 
 for(let i=0; i<100; i++) {
 
-    let num = i+1
-    console.log(num)
+   
+   let num = i+1 
+   
+    // dichiaro una variabile resto 
+    //per controllare se il numero è divisibile per 3
+
+    let restoMultiplo3 = num % 3   // number 0,1,2
+    let restoMultiplo5 = num % 5   // number 0,1,2,3,4
+
+    if (restoMultiplo3 === 0) {
+        console.log(num)
+    } 
+
+    if (restoMultiplo5 === 0) {
+        console.log(num)
+    }
+    
+    
+    
 }
 
 
