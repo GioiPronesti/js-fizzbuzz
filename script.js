@@ -34,7 +34,23 @@ e su num controllo
     se NUM è divisibile per 3 e 5 
         allora stampo la stringa "FizzBuzz" al posto di num    
 
+PSEUDO CODICE
+
+    per ogni iterazione del ciclo   100 iterazioni  generano la stampa da 0 a 99
+    (dichiaro i = 0; i < 100; i++)  {
+    
+    dichiaro num = i +1 
+
+    console.log(num)
+
+    }  
+
 */
 
+for(let i=0; i<100; i++) {
+
+    let num = i+1
+    console.log(num)
+}
 
 
