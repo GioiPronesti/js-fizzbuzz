@@ -52,22 +52,26 @@ for(let i=0; i<100; i++) {
    
    let num = i+1 
    
-    // dichiaro una variabile resto 
-    //per controllare se il numero è divisibile per 3
-
+    // dichiaro una variabile resto per controllare se il numero è divisibile per 3
     let restoMultiplo3 = num % 3   // number 0,1,2
+
+    // dichiaro una variabile resto per controllare se il numero è divisibile per 5
     let restoMultiplo5 = num % 5   // number 0,1,2,3,4
 
-    if (restoMultiplo3 === 0) {
-        console.log(num)
+    //
+    if (restoMultiplo3 === 0) {   // boolean
+        console.log('fizz')
+
+
+    } else if (restoMultiplo5 === 0) {
+        console.log('buzz')
     } 
 
-    if (restoMultiplo5 === 0) {
-        console.log(num)
-    }
+     else if ((restoMultiplo3 === 0) && (restoMultiplo5 === 0)) {
+
+        console.log('fizzbuzz')
     
+    } else  
     
-    
+    console.log(num)
 }
-
-
