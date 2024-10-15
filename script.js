@@ -59,19 +59,22 @@ for(let i=0; i<100; i++) {
     let restoMultiplo5 = num % 5   // number 0,1,2,3,4
 
     //
-    if (restoMultiplo3 === 0) {   // boolean
-        console.log('fizz')
+    if (restoMultiplo3 === 0 && restoMultiplo5 === 0) {   // boolean
+        console.log('fizzbuzz')
 
 
     } else if (restoMultiplo5 === 0) {
+        
         console.log('buzz')
-    } 
 
-     else if ((restoMultiplo3 === 0) && (restoMultiplo5 === 0)) {
+    } else if (restoMultiplo3 === 0 ) {
 
-        console.log('fizzbuzz')
+        console.log('fizz')
     
-    } else  
+    } else {
+        
+        console.log(num)
+    }
     
-    console.log(num)
+ 
 }
